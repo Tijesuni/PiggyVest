@@ -141,20 +141,6 @@ nav .buttonGroup li:not(:last-child){
     margin-top: 17%;
 }
 
-@media screen and (max-width: 1024px){
-    nav{
-        padding: 25px 32px;
-    }
-
-    .container{
-        display: flex;
-    }
-
-    nav .buttonGroup li{
-        position: relative;
-        bottom: 0;
-    }
-}
 
 /*Summary section*/
 
@@ -724,6 +710,7 @@ h6{
     nav .buttonGroup, nav .navList{
         opacity: 0;
         display: none;
+        transition: all .3s ease-in;
     }
 
     nav li{
@@ -762,15 +749,19 @@ h6{
         height: 100vh;
         background-color: #fff;
         color: #0c1825;
-        margin-top: 17%;
         text-align: center;
+    }
+
+    /*#hamburger .active{
+        transform: rotate(45deg);
+        transition: all .2s ease-in-out;
     }
 
     .navActive .navList{
         margin-top: 17%;
     }
 
-    /*.hamburger{
+    .hamburger{
         position: absolute;
         color: #fff;
         background: transparent;
