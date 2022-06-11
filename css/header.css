@@ -1,0 +1,245 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    font-family: DM Sans, sans-serif;
+    line-height: 27.2px;
+    font-size: 16.5px;
+    color: #353535;
+}
+
+.container{
+    margin: auto;
+    max-width: 1165px;
+    align-items: center;
+    display: flex;
+}
+
+/*Navigation section*/
+nav{
+    position: fixed !important;
+    padding: 25px 16px;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 7px 0 #ced3da;
+}
+
+nav .logo{
+    display: inherit;
+    padding-right: 50px;
+}
+
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.navbar .navList, .navbar .buttonGroup{
+    transition: all 0.3s ease-in;
+}
+
+.navbar .buttonGroup{
+    margin-left: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+nav .navList{
+    display: block;
+    opacity: 1;
+}
+
+nav .navList .navItem{
+    position: relative;
+}
+
+nav .navList .navItem:not(:last-child){
+    padding-right: 45px;
+}
+
+.hamburger{
+    display: none;
+}
+
+nav .navList li{
+    display: inline;
+    color: #0c1825;
+}
+
+nav .navList li a{
+    color: #0c1825;
+    font-weight: 500;
+}
+
+nav .navTwo{
+    margin-left: auto;
+}
+
+nav .buttonGroup li{
+    transition: .3s;
+}
+
+nav .buttonGroup li:not(:last-child){
+    padding-right: 8px;
+}
+
+.btn{
+    font-size: 16.5px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    padding: 16px 22px;
+    border-radius: 12px;
+}
+
+.borderedButton{
+    color: #0c1825;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    transition: border .8s, color .8s;
+}
+
+.unborderedButton{
+    background: #0c1825;
+    transition: background-color .8s;
+    color: #fff!important;
+}
+
+.showNav .navList{
+    margin-top: 17%;
+}
+
+@media screen and (max-width: 1024px){
+    nav{
+        padding: 25px 32px;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    nav .buttonGroup li{
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+    nav{
+        text-align: left;
+        margin-top: 0;
+        padding: 18px 32px;
+    }
+
+    .container{
+        display: block;
+    }
+
+    nav .buttonGroup, nav .navList{
+        opacity: 0;
+        display: none;
+        transition: all .3s ease-in;
+    }
+
+    nav li{
+        width: 100%;
+        height: 50px;
+        background-color: #000;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0;
+        padding-right: 0!important;
+    }
+
+    nav li, nav li a{
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: -12px;
+        right: -20px;
+        padding: 20px;
+        
+    }
+
+    .hamburger button{
+        width: 50px;
+        font-size: 30px;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+    }
+
+    .navActive{
+        height: 100vh;
+        background-color: #fff;
+        color: #0c1825;
+        text-align: center;
+    }
+
+    /*#hamburger .active{
+        transform: rotate(45deg);
+        transition: all .2s ease-in-out;
+    }
+
+    .navActive .navList{
+        margin-top: 17%;
+    }
+
+    .hamburger{
+        position: absolute;
+        color: #fff;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        display: block;
+        width: 50px;
+    }
+    
+    .showNav{
+        display: flex;
+        justify-content: flex-start;
+        padding: 2%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        margin-right: 2%;
+    }*/
+
+}
+
+@media screen and (max-width: 480px){
+    
+}
